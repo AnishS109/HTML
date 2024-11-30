@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.line{
+    height: 98vh;
+    width: 182vh;
+    background-color: rgb(47, 42, 42);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+.boxline1{
+    height: 7.72vh;
+    width: 8vh;
+    animation-name: box1ani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.boxline1:hover{
+    background-color: rgb(143, 22, 22);
+}
+
+@keyframes box1ani {
+    from{
+        border: 1px solid rgb(47, 42, 42);
+    }
+    to{
+        border: 1px solid rgb(156, 29, 29);
+    }
+}
+
+ .effect{
+    height: 89vh;
+    width: 100vh;
+    position: absolute;
+    left: 350px;
+    bottom: 55px;
+}
+
+.effect::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 0deg, red,rgb(242, 166, 166),red,rgb(242, 166, 166),red,rgb(242, 166, 166),red,rgb(242, 166, 166),red,rgb(242, 166, 166),red,rgb(242, 166, 166),red) ;
+    border-radius: 20px;
+    animation: rotating 4s linear infinite;
+}
+
+.effect::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 0deg, red,rgb(242, 166, 166),red,rgb(242, 166, 166),red,rgb(242, 166, 166),red,rgb(242, 166, 166),red,rgb(242, 166, 166),red,rgb(242, 166, 166),red) ;
+    border-radius: 20px;
+    animation: rotating 4s linear infinite;
+    filter: blur(80px);
+    opacity: 0.6;
+}
+
+/* .effect div{
+    inset: 4px;
+    background: black;
+    border-radius: 20px;
+    height: 78vh;
+    width: 68vh;
+    position: relative;
+    left: 4px;
+    top: 7px;
+}  */
+
+.mainbox{
+    text-align: center;
+    color: white;
+}
+
+
+
+.title{
+    height: 50px;
+    width: 99vh;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    bottom: 645px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.box{
+    inset: 4px;
+    background: black;
+    border-radius: 20px;
+    height: 75vh;
+    width: 98vh;
+    position: relative;
+    left: 4px;
+    top: 57px;
+    z-index: 1;
+    overflow-y: auto;
+}
+h1{
+    /* box-shadow: 10px 10px 10px 10px blanchedalmond; */
+    filter: drop-shadow(10px 10px 10px 10px white);
+}
+
+
+.input{
+    height: 23px;
+    width: 615px;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    z-index: 1;
+    border: none;
+    top: 62px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+}
+
+
+.btn{
+    height: 43px;
+    width: 135px;
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    z-index: 1;
+    border: black;
+    top: 62px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.msgBox{
+    height: fit-content;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    left: 460px;
+    top: 50px;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 1px 1px 30px 5px red;
+    margin: 5px;
+}
+
+.pmsg{
+    font-size: 22px;
+    color: black;
+    
+}
+
+.botMsg{
+    height: fit-content;
+    width: 280px;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    left: 65px;
+    top: 50px;
+    color: black;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 1px 1px 30px 5px red;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.hide{
+    width: 25px;
+    height: 588px;
+    background-color: black;
+    position: relative;
+    bottom: 574px;
+    left: 755px;
+    z-index: 1;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 3px;
+}
+
+
+
+
+
+
